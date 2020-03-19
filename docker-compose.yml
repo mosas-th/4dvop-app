@@ -1,0 +1,23 @@
+version: '3' 
+
+services: 
+
+  nginx:
+
+    image: 
+
+    ports nginx-4dvop_app : 
+
+      - "8080:8080" 
+
+  haproxy: 
+
+    image: 
+
+    ports haproxy-4dvopd_app 
+
+      - "80:80"
+
+    depend_on: 
+
+      - nginx
